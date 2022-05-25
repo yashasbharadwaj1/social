@@ -1,0 +1,13 @@
+ py -m venv myenv     
+ myenv\scripts\activate 
+ pip install django
+ django-admin startproject myproject
+ settings.py --- add database connection  
+ cd myproject 
+ django-admin startapp account 
+ add account in settings 
+ pip install mysqlclient      
+ py manage.py runserver 
+ git init from root 
+ 
+ 
