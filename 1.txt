@@ -9,5 +9,10 @@
  pip install mysqlclient      
  py manage.py runserver 
  git init from root 
- 
- 
+ create a new repo from website follow full list of commands 
+  add this to templates list in settings.py 'DIRS': [os.path.join(BASE_DIR,'templates')],        
+create templates folders
+ static folder
+ STATIC_URL = 'static/'
+STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS=(os.path.join(BASE_DIR, 'static'),)
