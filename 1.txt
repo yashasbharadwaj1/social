@@ -16,3 +16,19 @@ create templates folders
  STATIC_URL = 'static/'
 STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS=(os.path.join(BASE_DIR, 'static'),)
+create models handle profile 
+FOR PROFILE IMAGES WHICH COMES UNDER THE CATEGORY OF MEDIA 
+configure that and add these to settings.py  
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+then go ahead and configure urls where in u import 
+from django.conf.urls.static import static 
+urlpatterns=urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+  add this is to models.py
+  profileimg=models.ImageField(upload_to='profile_images',default='blank-profile-picture.png') 
+this is the way u configure the User model
+from django.contrib.auth import get_user_model
+# Create your models here.
+User=get_user_model()
+class Profile(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
