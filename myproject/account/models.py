@@ -9,4 +9,4 @@ class Profile(models.Model):
     profileimg=models.ImageField(upload_to='profile_images',default='blank-profile-picture.png') 
     location=models.CharField(max_length=100)
     def __str__(self):
-        return self.user.username
+        return self.user.username 
