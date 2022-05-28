@@ -42,3 +42,9 @@ settings.html
   <form action="" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
 this csrf token is compulsory for all forms 
+
+
+uploading section let me complete first
+the project is blood bank to blood donar 
+1.change settings.html and its corresponding view to handle account settings of blood banks 
+blood banks settings needs to have pincode,phonenumber,address as provided in xl data
