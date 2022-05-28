@@ -88,4 +88,5 @@ def settings(request):
     return render(request, 'settings.html',{'user_profile':user_profile})
 
 def detail(request):
-    return render(request, 'home.html')
+    return render(request, 'detail.html')
+
